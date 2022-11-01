@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário *nome do docente*</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,900&family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    
+<header>
+    <div class="container">
+        <div class="header__area">
+            <div class="header__box">
+                <div class="header__menu">
+                    <i class="fa-solid fa-bars" id="menuSanduba" onclick="ativarMenu(); desativarMenu()"></i>
+                </div>
+
+                <div class="menuOpen" id="menuFixed">
+                    <div class="dadosDocente">
+                        <div class="fotoDocente">
+                            <img src="imgs\user.png" alt="">
+                        </div>
+                        <div class="nomeDocente">
+                            <h6>Nome do Docente</h6>
+                        </div>
+                    </div>
+                    <div class="menuItem">
+                        <div class="itemLogo">
+                            <i class="fa-solid fa-pencil"></i>
+                        </div>
+                        <div class="itemTexto">
+                            <h6>Editar Perfil</h6>
+                        </div>
+                        <div class="itemArrow">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <div class="itemLogo">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <div class="itemTexto">
+                            <h6>Ajuda e Suporte</h6>
+                        </div>
+                        <div class="itemArrow">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <div class="itemLogo">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </div>
+                        <div class="itemTexto">
+                            <h6>Sair</h6>
+                        </div>
+                        <div class="itemArrow">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header__box">
+                <div class="header__title">
+                    <h1>Geral</h1>
+                </div>
+            </div>
+            <div class="header__box">
+                <div class="header__logo">
+                    <img src="imgs\senacLogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="home__area">
+        <div class="area__dados">
+            <div class="title__dados">
+                <h3>xx/xx/xxxx</h3>
+            </div>
+            <div class="sub__dados">
+                <h6>Aula</h6> <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="item__dados">
+                <div class="turno__dados">
+                    <h4>Manhã</h4>
+                </div>
+                <div class="onde__dados">
+                    <h4>Sala: 13</h4>
+                </div>
+            </div>
+
+            <div class="item__dados">
+                <div class="turno__dados">
+                    <h4>Tarde</h4>
+                </div>
+                <div class="onde__dados">
+                    <h4>-----------</h4>
+                </div>
+            </div>
+
+            <div class="item__dados">
+                <div class="turno__dados">
+                    <h4>Noite</h4>
+                </div>
+                <div class="onde__dados">
+                    <h4>Sala: 13</h4>
+                </div>
+            </div>
+
+            <div class="item__dados">
+                <div class="turno__dados">
+                    <h4>Reunião</h4>
+                </div>
+                <div class="onde__dados">
+                    <h4>00:00</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/33df6b1ede.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js\script.js"></script>
+
+
+<script>
+    $("#menuSanduba").click(() =>
+    {
+        // $("#menuFixed").toggleClass("dNone")
+        $(".fa-bars").toggleClass("fa-close")
+        $(".menuOpen").toggleClass("maxH")
+    }
+    )
+</script>
+
+</body>
+</html>

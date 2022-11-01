@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Montserrat Alternates';
+    background-color: #F5E9DD;
+  }
+
+  .container {
+    padding: 1%;
+  }
+
+  .dNone {
+    display: none;
+    transition: max-height 0.5s;
+  }
+
+  .dBlock {
+    display: block !important;
+    transition: max-height 0.3s;
+  }
+
+  .header__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__box {
+    width: 33%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .header__menu {
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .header__title {
+    font-size: 35px;
+    color: #FD772C;
+  }
+
+  .menuOpen {
+    background-color: #ffffff;
+    border-radius: 40px;
+    position: absolute;
+    width: 400px;
+    right: -5.5rem;
+    transition: all 0.3s;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 5%;
+  }
+
+
+  .maxH {
+    max-height: 400px !important;
+    transition: all 0.3s;
+    opacity: 1;
+  }
+
+  .dadosDocente {
+    display: flex;
+    align-items: center;
+  }
+
+  .fotoDocente img{
+    max-width: 60px;
+    border-radius: 100px;
+  }
+
+  .fotoDocente {
+    border-radius: 100px;
+  }
+
+  .nomeDocente{
+    font-size: 30px;
+    padding-left: 5%;
+    color: #595858;
+  }
+
+  .menuItem {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    margin-top: 2em;
+    align-items: center;
+    color: #595858;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+  .menuItem:hover {
+    color: #242323;
+    transition: all 0.3s;
+  }
+
+  .area__dados {
+    width: 25%;
+    color: #595858;
+    /* text-align: center; */
+    /* justify-content: center; */
+    background-color: #fff;
+    padding: 3%;
+    border-radius: 20px;
+  }
+
+  .title__dados {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .sub__dados {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+    font-weight: 400;
+  }
+
+  .item__dados {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 400;
+    /* margin: 0; */
+    padding: 5% 0;
+    align-items: center;
+  }
+
+  .onde__dados {
+    color: #000;
+    background-color: #cacaca;
+    padding: 15px;
+    min-width: 150px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
