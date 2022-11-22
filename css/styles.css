@@ -59,8 +59,9 @@
     opacity: 0;
     overflow: hidden;
     padding: 5%;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
   }
-
+ 
 
   .maxH {
     max-height: 400px !important;
@@ -104,6 +105,11 @@
     transition: all 0.3s;
   }
 
+
+  .home__area {
+    display: flex;
+  }
+
   .area__dados {
     width: 25%;
     color: #595858;
@@ -112,6 +118,8 @@
     background-color: #fff;
     padding: 3%;
     border-radius: 20px;
+    max-height: 550px;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
   }
 
   .title__dados {
@@ -147,3 +155,42 @@
     border-radius: 5px;
   }
 
+  .area__calendario {
+    width: 70%;
+    text-align: center;
+    margin: 0 5%;
+    background-color: #ffffff ;
+    border-radius: 50px;
+    padding: 2%;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
+  }
+
+  .calendario__mes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    align-items: center;
+    color: #595858;
+    text-transform: uppercase;
+  }
+
+  .calendario__dias table {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .calendario__dias td {
+    border: 1px solid;
+    border-radius: 30px;
+    width: 100px;
+    padding: 3.5% 0;
+    font-size: 23px;
+    cursor: pointer;
+  }
+
+  .calendario__dias td:hover {
+    background-color: #FD772C;
+    transition: 0.3s all;
+    color: #fff;
+  }
+  
